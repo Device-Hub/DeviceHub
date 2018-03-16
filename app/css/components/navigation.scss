@@ -1,0 +1,39 @@
+.navigation {
+	padding: 0;
+	z-index: 1;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #36C797), color-stop(100, #4F8AFF));
+	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+
+	.item {
+		display: inline-block;
+		text-decoration: none;
+		margin: 16px 32px;
+		color: #343434;
+		
+		&.active,
+		&.logo {
+			color: #000;
+			font-weight: bold;
+		}
+	}
+
+	.logo-container {
+		.logo-img {
+			width: 12%;
+			height: auto;
+		}
+	
+		.brand-name {
+			display: inline-block;
+			margin: 0 0 0 10px;
+			font-size: 26px;
+			width: 50%;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+		}
+	}
+
+	.nav-menu {
+		float: right;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,65 @@
+.root {
+    padding: 20px 0;
+
+    a {
+    	text-decoration: none;
+    }
+
+    .img-container {
+        width: 60px;
+        float: left;
+
+        .os-logo {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .os-devices {
+        float: right;
+        width: calc(100% - 60px);
+    }
+
+    .disabled {
+        pointer-events: none;
+
+        .button {
+            background: lightgray;
+        }
+    }
+
+    .button {
+        font-size: 16px;
+        font-weight: 500;
+    	margin: 0 0 10px 10px;
+    	padding: 14px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 13px;
+
+        &.available:hover {
+            color: #fff;
+            background-color: #36C797;
+            border: 1px solid #36C797;
+            transition: background-color .25s ease-in;
+        }
+
+        &.empty {
+            color: #fff;
+            background-color: rgb(206, 34, 34);
+            border: 1px solid rgb(206, 34, 34);
+            opacity: 0.75;
+
+            &:hover {
+                opacity: 1;
+                transition: opacity .15s ease-in;
+
+            }
+
+        }
+    }
+
+    
+
+    clear: both;
+}

@@ -1,0 +1,104 @@
+.login {
+  width: 420px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+.waiting .loading {
+    display: block;
+}
+
+.alternative {
+  background: #ffff;
+  padding: 12px 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.alternative-link {
+  color: #2196f3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loading {
+  display: none;
+  text-align: center;
+  margin: 24px auto;
+}
+
+.email-container {
+  padding: 16px 12px;
+  border-bottom: 2px solid #e3e3e3;
+}
+
+.google-container {
+  padding: 16px 12px;
+}
+
+.heading {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 48px;
+
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  padding: 0.75rem 1rem;
+  border: 2px solid #c3c8ce;
+  border-radius: 4px;
+  width: 91%;
+
+  background-color: #ffffff;
+  color: #333f48;
+  margin-bottom: 0.75rem;
+}
+
+.message {
+  color: #ed193a;
+  font-size: 12px;
+}
+
+.button {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  transition: 0.1s background-color ease;
+
+  color: #ffffff;
+  background: #0f9d58;
+  border-color: #0f9d58;
+}
+
+.custom-login {
+  width: 100%;
+}
+
+.google-login {
+  width: 91%;
+}
+
+.hint {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b4bac1;
+}

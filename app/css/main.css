@@ -1,0 +1,18 @@
+html {
+    height: 100%;
+    background: #eee url(https://cdn.wallpapersafari.com/38/49/6LS0zc.jpg);
+    background: #f7f7f7;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.app {
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
