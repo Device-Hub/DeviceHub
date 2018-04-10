@@ -53,7 +53,14 @@ export function signUp(req, res, next) {
   });
 }
 
+export function all(req, res) {
+  User.find({}).exec((err, user) => {
+    return res.json(user)
+  })
+}
+
 export default {
+  all,
   login,
   logout,
   signUp

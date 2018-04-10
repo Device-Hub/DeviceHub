@@ -17,8 +17,7 @@ export default function render(req, res) {
     user: {
       authenticated,
       isWaiting: false,
-      message: '',
-      isLogin: true
+      message: ''
     }
   }, history);
   const routes = createRoutes(store);
@@ -53,7 +52,7 @@ export default function render(req, res) {
       // This method waits for all render component
       // promises to resolve before returning to browser
       store.dispatch({ type: types.CREATE_REQUEST });
-      fetchDashboardDataForRoute(props)
+      fetchDashboardDataForRoute(props, req.user)
         .then((data) => {
           store.dispatch({ type: types.DEVICE_REQUEST_SUCCESS, data });
 

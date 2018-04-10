@@ -16,6 +16,7 @@ export default (app) => {
     app.post('/sessions', usersController.login);
     app.post('/users', usersController.signUp);
     app.delete('/sessions', usersController.logout);
+    app.get('/users', usersController.all);
   } else {
     console.warn(unsupportedMessage('users routes'));
   }
@@ -56,7 +57,7 @@ export default (app) => {
   }
 
   if(devicesController) {
-    app.get('/device', devicesController.all);
+    app.get('/devices', devicesController.all);
     app.get('/device/:id', devicesController.get);
     app.post('/device/:id', devicesController.add);
     app.put('/device/:id', devicesController.update);
