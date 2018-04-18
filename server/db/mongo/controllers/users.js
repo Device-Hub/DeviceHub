@@ -59,9 +59,23 @@ export function all(req, res) {
   })
 }
 
+export function deleteUser(req, res) {
+  const query = { _id: req.params.id };
+
+  User.findOneAndRemove(query, (err) => {
+    if (err) {
+      console.log('Error on delete');
+      return res.status(500).send('We failed to delete for some reason');
+    }
+
+    return res.status(200).send('Removed Successfully');
+  });
+}
+
 export default {
   all,
   login,
   logout,
-  signUp
+  signUp,
+  deleteUser
 };
